@@ -1,0 +1,10 @@
+{
+  "cSpell.enableFiletypes": ["dart"],
+  "cSpell.allowCompoundWords": true,
+  "cSpell.diagnosticLevel": "Warning",
+  "cSpell.dictionaryDefinitions": [],
+  "cSpell.logLevel": "Warning",
+  "editor.codeActionsOnSave": null,
+  "workbench.settings.editor": "json",
+  "php.validate.executablePath": ""
+}

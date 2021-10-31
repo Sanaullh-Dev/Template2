@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <title>Project No 1</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <!-- ------ icon pack --------- -->
+    <link rel="stylesheet" href="assets/Packages/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="assets/JS/icofont/icofont.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <!-- --bootstrap --- -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!---- animateion ---->
+    <link rel="stylesheet" href="assets/Packages/animate.min.css">
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+    <!-- ---- Google Fonts------ -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="./assets/JS/main.js"></script>
+
+</head>
+
+<body>
+    <!-- ------- Topbar ------ -->
+    <div id="topbar" class="topbar-container">
+        <div class="topbar">
+            <div class="contact-info">
+                <a href="#"><i class="bi bi-envelope-fill"></i>Sanaulla@shaikh.com</a>
+                <a href="#"><i class="bi bi-phone-fill"></i>+91 7499 60 4663</a>
+            </div>
+            <div class="social-link">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+            </div>
+        </div>
+    </div>
+
+    <!---- Navbar ----->
+    <header id="header" class="fixed-top">
+        <div class="navbar-cont">
+            <div class="menubar">
+                <div class="navbar-logo">Website 1</div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="active"><a href="#hero" class="navlink">Home</a></li>
+                    <li><a href="#about" class="navlink">About</a></li>
+                    <li><a href="#services" class="navlink">Service</a></li>
+                    <li><a href="#pricing" class="navlink">Pricing</a></li>
+                    <li><a href="#team" class="navlink">Team</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="navlink">
+                            <span>Dropdown</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdownlink" href="#">DropDown 1</a></li>
+                            <li><a class="dropdownlink" href="#">DropDown 2</a></li>
+                            <li class="deepdropdown dddown">
+                                <a class="dropdownlink" href="#"><span>DropDown 3</span><i
+                                        class="bi bi-chevron-right"></i>
+                                </a>
+                                <ul class="deepdroupdown-menu dddown-menu">
+                                    <li><a href="#">DeepDowndown 1</a></li>
+                                    <li><a href="#">DeepDowndown 2</a></li>
+                                    <li><a href="#">DeepDowndown 3</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a class="dropdownlink" href="#">DropDown 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="navlink">
+                            <span>Dropdown 2</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdownlink" href="#">DropDown 2-1</a></li>
+                            <li><a class="dropdownlink" href="#">DropDown 2-2</a></li>
+                            <li class="deepdropdown">
+                                <a class="dropdownlink" href="#"><span>DropDown 2-3</span><i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul class="deepdroupdown-menu">
+                                    <li><a class="ddd-link" href="#">DeepDowndown 2-1</a></li>
+                                    <li><a class="ddd-link" href="#">DeepDowndown 2-2</a></li>
+                                    <li><a class="ddd-link" href="#">DeepDowndown 2-3</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a class="dropdownlink" href="#">DropDown 2-4</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contact" class="navlink">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--------------------------------------- Hero ---------------------------------------------->
+
+    <section id="hero" class="container-fluid">
+        <div id="heroCarousel" class="carousel slide hero-slides" data-ride="carousel" data-bs-interval="5000"
+            data-aos-delay="50">
+            <!-- data-bs-interval="5000"  data-aos-delay="50" -->
+            <ol class="carousel-indicators">
+                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#heroCarousel" data-slide-to="1"></li>
+                <li data-target="#heroCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- ------------------ Slider 1 ---------------------- -->
+                <div class="carousel-item active" style="background-image: url(assets/image/Slider/hero-bg1.jpg)">
+                    <div class="container h-100 d-md-block ">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-sm-6">
+                                <div class="caption animate__animated animate__fadeIn">
+                                    <h2 class="animate__animated animate__fadeInLeft">Welcome Website 1</h2>
+                                    <p class="animate__animated animate__fadeInRight">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <a class="btn btn-get-started animate__animated animate__fadeInUp"
+                                        href="#about">Learn
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------ Slider 2 ---------------------- -->
+                <div class="carousel-item" style="background-image: url(assets/image/Slider/hero-bg2.jpg)">
+                    <div class="container h-100 d-md-block">
+                        <div class="row h-100">
+                            <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-sm-6">
+                                <div class="caption animate__animated animate__fadeIn">
+                                    <h2 class="animate__animated animate__fadeInLeft">Website 1</h2>
+                                    <p class="animate__animated animate__fadeInRight">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <a class="btn btn-get-started animate__animated animate__fadeInUp" href="#">Learn
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------ Slider 3 ---------------------- -->
+                <div class="carousel-item" style="background-image: url(assets/image/Slider/hero-bg3.jpg)">
+                    <div class="container h-100 d-md-block">
+                        <div class="row  h-100">
+                            <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-sm-6">
+                                <div class="caption animate__animated animate__fadeIn">
+                                    <h2 class="animate__animated animate__fadeInLeft">Website 1</h2>
+                                    <p class="animate__animated animate__fadeInRight">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.</p>
+                                    <a class="btn btn-get-started animate__animated animate__fadeInUp" href="#">Learn
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <main id="main" class="">
+        <!-------- About ------------->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 order-1 col-12 order-lg-2" data-aos="fade-left" data-aos-delay="10">
+                        <img src="./assets/image/About1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="content col-md-12 col-lg-6 col-12 pt-4 pt-lg-0 order-2 order-lg-1"
+                        data-aos="fade-right">
+                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                        <p class="font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat
+                            </li>
+                            <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate
+                                velit.</li>
+                            <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis aute irure dolor in
+                                reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                                pariatur.
+                            </li>
+                        </ul>
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit
+                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!------- why-us ------------->
+        <section id="why-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="box">
+                            <span>01</span>
+                            <h4 class="animate__animated animate__fadeInRight">Service 1</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga temporibus
+                                dolorem
+                                eligendi deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box">
+                            <span>02</span>
+                            <h4>Service 2</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga temporibus
+                                dolorem
+                                eligendi deserunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box">
+                            <span>03</span>
+                            <h4>Service 3</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga temporibus
+                                dolorem
+                                eligendi deserunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------- Clients ------------- -->
+        <section id="clients" class="clients">
+            <div class="container">
+                <div class="section-title pb-0">
+                    <span>Our Clients</span>
+                    <h2>Our Clients</h2>
+                </div>
+                <div class="swiper clients-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/image/clients/client-1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image/clients/client-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image/clients/client-3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image/clients/client-4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image/clients/client-5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image/clients/client-6.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image/clients/client-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image/clients/client-4.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <span>Services</span>
+                    <h2>Services</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+                        <div class="icon-box">
+                            <div class="icon"><i class='bx bxl-dribbble'></i> </div>
+                            <h4><a href="">Lorem ipsum</a></h4>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                        data-aos-delay="150">
+                        <div class="icon-box">
+                            <div class="icon"><i class='bx bx-file'></i></div>
+                            <h4><a href="">Lorem ipsum</a></h4>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up"
+                        data-aos-delay="150">
+                        <div class="icon-box">
+                            <div class="icon"><i class='bx bxl-discord-alt'></i></div>
+                            <h4><a href="">Lorem ipsum</a></h4>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mt-4" data-aos="fade-up"
+                        data-aos-delay="150">
+                        <div class="icon-box">
+                            <div class="icon"><i class='bx bx-world'></i></div>
+                            <h4><a href="">Lorem ipsum</a></h4>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mt-4" data-aos="fade-up"
+                        data-aos-delay="150">
+                        <div class="icon-box">
+                            <div class="icon"><i class='bx bxl-wordpress'></i></div>
+                            <h4><a href="">Lorem ipsum</a></h4>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mt-4" data-aos="fade-up"
+                        data-aos-delay="150">
+                        <div class="icon-box">
+                            <div class="icon"><i class='bx bx-mobile-alt'></i></div>
+                            <h4><a href="">Lorem ipsum</a></h4>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- -----------Call to Action ----------------- -->
+        <section class="cta" id='cta'>
+            <div class="container" data-aos="zoom-in">
+                <div class="text-center">
+                    <h3>Call To Action</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda hic id deserunt iusto
+                        excepturi quae, quisquam fuga explicabo unde voluptate numquam quaerat vel officia nesciunt.
+                        Nobis assumenda ab iure incidunt.</p>
+                    <a class="cta-btn" href="#">Call to Action</a>
+                </div>
+            </div>
+        </section>
+
+        <!----------- Pricingsss --------------->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-title">
+                    <span>Pricing</span>
+                    <h2>Pricing</h2>
+                </div>
+                <div class="row price-container">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="box">
+                            <h3>Free</h3>
+                            <h4><sup>$</sup>0<span> / month</span></h4>
+                            <ul>
+                                <li>Service 1</li>
+                                <li>Service for free 2</li>
+                                <li>Service also this free</li>
+                                <li class="na">Service of Description</li>
+                                <li class="na">Service of new fetchers </li>
+                            </ul>
+                            <div class="btn-prices">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="box default">
+                            <h3>Premium Plan</h3>
+                            <h4><sup>$</sup>10<span> / month</span></h4>
+                            <ul>
+                                <li>Premium Plan service 1</li>
+                                <li>Premium Plan service another one </li>
+                                <li>Premium Plan service this also</li>
+                                <li>Premium Plan service of Description</li>
+                                <li class="na">This only for Diamond Plan</li>
+                            </ul>
+                            <div class="btn-prices">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="box">
+                            <h3>Diamond Plan</h3>
+                            <h4><sup>$</sup>20<span> / month</span></h4>
+                            <ul>
+                                <li>Diamond Plan service 1</li>
+                                <li>Diamond Plan service another one </li>
+                                <li>Diamond Plan service this also</li>
+                                <li>Diamond Plan service of Description</li>
+                                <li>This only for Diamond Plan</li>
+                            </ul>
+                            <div class="btn-prices">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----- Team ------ -->
+        <section class="team" id="team">
+            <div class="container">
+                <div class="section-title">
+                    <span>Our Team</span>
+                    <h2>Our Team</h2>
+                    <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 align-items-stretch">
+                        <div class="member">
+                            <img src="assets/image/team/member1.jpg" alt="">
+                            <h4>Andrea Piacquadio</h4>
+                            <span>CEO</span>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, ipsum.</p>
+                            <div class="social">
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                                <a href="#"><i class="icofont-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 align-items-stretch">
+                        <div class="member">
+                            <img src="assets/image/team/member2.jpg" alt="">
+                            <h4>Joney Benstock</h4>
+                            <span>Desinger</span>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, ipsum.</p>
+                            <div class="social">
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                                <a href="#"><i class="icofont-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 align-items-stretch">
+                        <div class="member">
+                            <img src="assets/image/team/member3.jpg" alt="">
+                            <h4>Taylor Swift</h4>
+                            <span>Marketing Manager</span>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, ipsum.</p>
+                            <div class="social">
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                                <a href="#"><i class="icofont-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 align-items-stretch">
+                        <div class="member">
+                            <img src="assets/image/team/member4.jpg" alt="">
+                            <h4>Joelson Melo</h4>
+                            <span>Chief Manger of Team</span>
+                            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, ipsum.</p>
+                            <div class="social">
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                                <a href="#"><i class="icofont-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Sales Navigator ,  -->
+
+        <!-- ---- contact-us --------- -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <span>Contact</span>
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-6">
+                        <div class="info-box">
+                            <i class="bx bx-map"></i>
+                            <h4>Our Address</h4>
+                            <p>Mumbai, Maharashtra - 41001</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info-box">
+                            <i class="bx bx-envelope"></i>
+                            <h4>Email</h4>
+                            <p>contact@website1.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info-box">
+                            <i class="bx bx-phone-call"></i>
+                            <h4>Call Us</h4>
+                            <p>+91 8188 888</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <div class="map"></div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-12">
+                        <iframe class="mb-4 mb-lg-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7604.891584965231!2d75.89519900362609!3d17.62903296284769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5d9ffad789cb7%3A0xd87bc3fad4156bbd!2sVazir%20Nagar%20Masjid!5e0!3m2!1sen!2sin!4v1633710639367!5m2!1sen!2sin"
+                            frameborder="0" style="border:0; width:100%; height:384px;" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mt-4">
+                        <form action="./assets/forms/contact.php" method="POST" role="form" class="contact-from"
+                            id="contact-from">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label>Your Name</label>
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" required />
+                                    <i class='bx bx-check-circle'></i>
+                                    <i class='bx bx-x-circle'></i>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-md-6 form-group ">
+                                    <label>Email Address</label>
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="Your Email" required />
+                                    <i class='bx bx-check-circle'></i>
+                                    <i class='bx bx-x-circle'></i>
+                                    <div class="validate"> Hello</div>
+                                </div>
+                            </div>
+                            <div class="form-group full-size">
+                                <label>Subject</label>
+                                <input type="text" name="subject" class="form-control" id="subject"
+                                    placeholder="Subject" required />
+                                <i class='bx bx-check-circle'></i>
+                                <i class='bx bx-x-circle'></i>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group full-size">
+                                <label>Meassage</label>
+                                <textarea name="message" class="form-control" id="message" rows="4"
+                                    placeholder="Message" required></textarea>
+                                <i class='bx bx-check-circle'></i>
+                                <i class='bx bx-x-circle'></i>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank You!</div>
+                            </div>
+                            <div class="text-center mt-4"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+    </main>
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <h3>Website1</h3>
+                            <p>Plot No 121 ,<br>
+                                Solpaur- 413 255 <br><br>
+                                <strong>Phone:</strong> +91 74 9960 4663 <br>
+                                <strong>Email:</strong> srshaikh.work@gmail.com
+                            </p>
+
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Use Link</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">About</a> </li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Our Service</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i>Web Design</li>
+                            <li><i class="bx bx-chevron-right"></i>Web Development</li>
+                            <li><i class="bx bx-chevron-right"></i>Product Management</li>
+                            <li><i class="bx bx-chevron-right"></i>Marketing</li>
+                            <li><i class="bx bx-chevron-right"></i>Logo Design</li>
+                            <li><i class="bx bx-chevron-right"></i>Graphic Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-news">
+                        <h4>Our Newsletter</h4>
+                        <p>Our Team send you least Newsletter on your email address, so can keep on toch me us.</p>
+                        <form action="" method="POST">
+                            <input type="email" name="email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Website1</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed By <a href="www.softDevs.in">softDevs</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+    </a>
+
+    <!-- <div class="myclass"></div> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
